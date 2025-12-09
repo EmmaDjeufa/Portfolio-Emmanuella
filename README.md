@@ -1,6 +1,6 @@
 # My Portfolio Wesbite - Overview 🚀
 
-This repository contains the open source version of my porfolio website.
+This repository contains the open source version of my porfolio website. (https://github.com/huzaifahmedz/Huzaif-Ahmed-Portfolio-Sixth)
 Do check it out!
 
 ## Instructions 🛠️
