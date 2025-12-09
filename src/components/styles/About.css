@@ -1,0 +1,76 @@
+/* Conteneur global de la section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centré sur mobile */
+  width: 100%;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* Conteneur du contenu texte */
+.about-me {
+  width: 100%;
+  max-width: 700px;
+  padding: 0 10px;
+}
+
+/* Titre de la section */
+.about-me h3,
+.title {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 400;
+  color: var(--accentColor);
+  margin-bottom: 20px;
+}
+
+/* Texte principal */
+.para {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 600;
+  word-spacing: normal;  /* Espacement normal entre les mots */
+  letter-spacing: normal;
+  white-space: normal;   /* Permet le retour à la ligne automatique */
+}
+
+/* Tablettes */
+@media only screen and (min-width: 768px) {
+  .about-me {
+    max-width: 600px;
+  }
+
+  .para {
+    font-size: 1.4rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  .about-section {
+    justify-content: flex-end; /* aligné à droite sur desktop */
+  }
+
+  .about-me {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+
+  .para {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+
+/* Très grands écrans */
+@media only screen and (min-width: 1950px) {
+  .para {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+}
+
