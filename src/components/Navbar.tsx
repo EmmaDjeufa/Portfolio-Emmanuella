@@ -70,21 +70,21 @@ const Navbar = () => {
           Logo
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:emmandjeufa@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          emmandjeufa@gmail.com
         </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
-              <HoverLinks text="ABOUT" />
+              <HoverLinks text="JE SUIS?" />
             </a>
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="TRAVAIL" />
             </a>
           </li>
           <li>

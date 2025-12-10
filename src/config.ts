@@ -11,39 +11,38 @@ export const config = {
         location: "France"
     },
    about: {
-    title: "About Me",
-    description: "Ingenieure informatique specialisee en Cloud Computing depuis octobre 2025, avec des experiences en securite et developpement SharePoint (SPFx). J'ai mene plusieurs projets DevOps et cloud sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux, augmentant la scalabilite et la fiabilite des systemes jusqu'a 40 %. Decouvrez mes projets sur GitHub. Curieuse et en constante evolution, je me forme aux nouvelles technologies cloud pour proposer des solutions innovantes et performantes."
+    title: "Qui suis-je?",
+    description: "Ingénieure informatique spécialisée en Cloud Computing, avec une expertise en sécurité et développement SharePoint (SPFx). J’ai participé à des projets DevOps et cloud basés sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux."
    },
 
 
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
-            location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            position: "Consultante",
+            company: "Avanade",
+            period: "2024",
+            location: "Bordeaux",
+            description: "Développement pendant mon stage de l'application web Allô Réseau. Optimisation à 40% de la première version avec SPFx",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Création d'interfaces utilisateur interactives avec SPFx et Node.js",
+                "Garantir un bon affichage des données utilisateurs sur l'interface developpé",
+                "Optimisation des performances de l'application et garantie de son utilisation par le client sur le long terme, conformément à sa licence Microsoft.",
+                "Collaborer avec le responsable de la conception et du développement backend pour fournir des fonctionnalités de haute qualité."
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["SharePoint", "Node.js", "PowerApps", "JavaScript", "SPFx", "TypeScript"]
         },
         {
-            position: "Consultante Modern Workplace",
-            company: "Avanade",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            position: "Ingénieure Cyber sécurité",
+            company: "C.H. de l'Aigle",
+            period: "2023",
+            location: "France",
+            description: "Développement d'une solution d'accès sécurisé pour les prestataires externes.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Sécurisation des connexions RDP/SSH et contrôle d'accès aux serveurs externes",
+                "Formation certifiante sur les concepts essentiels de la sécurité avec la MOOC de l'ANSSI",
+                "Configuration d'appareil informatique à destination du personnel médical"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            technologies: ["Machine virtuelle", "Apache Guacamol", "Active Directory", "Bash (Linux)", "Protocoles RDP et SSH", "Réseau informatique"]
         }
     ],
     projects: [
@@ -85,23 +84,25 @@ export const config = {
     ],
     contact: {
         email: "emmandjeufa@gmail.com",
-        github: "https://github.com/huzaifahmedz",
-        linkedin: "https://www.linkedin.com",
+        github: "https://github.com/EmmaDjeufa?tab=repositories",
+        linkedin: "https://www.linkedin.com/in/emmanuella-n-36323b259",
         twitter: "https://x.com",
-        instagram: "https://www.instagram.com"
+        instagram: "https://www.instagram.com/3884deux"
     },
     skills: {
         develop: {
-            title: "DEVELOP",
-            description: "Full-stack development with modern web technologies",
-            details: "Building scalable web applications using React, Node.js, and cutting-edge frameworks. Specializing in creating responsive, performant, and accessible user interfaces.",
-            tools: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Framer Motion", "Three.js"]
-        },
+            title: "CI/DI",
+            description: "Intégration et déploiement continu des solutions.",
+            details: "Gestion d'infrastructure cloud, de l'intégration et du déploiement continu et sécurisé des solutions développés.",
+            tools: ["AWS", "kubernetes", "Terraform", "Ansible", "Gitlab", "GCP", "Github", "Docker"]
+             },
         design: {
-            title: "DESIGN",
-            description: "UI/UX design and modern web interfaces",
-            details: "Creating beautiful and intuitive user experiences with focus on accessibility and user-centered design principles.",
-            tools: ["UI Design", "UX Design", "Figma", "Photoshop", "Motion Design", "Responsive Design", "Accessibility", "Prototyping"]
+
+            title: "DEVELOP",
+            description: "Développement full-stack, web modernes.",
+            details: "Développement d'applications web évolutives avec des frameworks de pointe. Création d'interfaces utilisateur réactives, performantes et accessibles.",
+            tools: ["JavaScript", "TypeScript", "React", "Python","Java", "Angular", "firebase", "MongoDB", "MySQL", "Flask", "Node.js"]
+       
         }
     }
 };
