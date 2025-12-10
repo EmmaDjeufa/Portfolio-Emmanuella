@@ -20,7 +20,7 @@ export const config = {
         {
             position: "Consultante",
             company: "Avanade",
-            period: "2024",
+            period: "2024 - 2024",
             location: "Bordeaux",
             description: "Développement pendant mon stage de l'application web Allô Réseau. Optimisation à 40% de la première version avec SPFx",
             responsibilities: [
@@ -34,7 +34,7 @@ export const config = {
         {
             position: "Ingénieure Cyber sécurité",
             company: "C.H. de l'Aigle",
-            period: "2023",
+            period: "2023 - 2023",
             location: "France",
             description: "Développement d'une solution d'accès sécurisé pour les prestataires externes.",
             responsibilities: [
