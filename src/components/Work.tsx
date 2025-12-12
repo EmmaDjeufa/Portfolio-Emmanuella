@@ -52,7 +52,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          MES <span>PROJETS</span>
         </h2>
         <div className="work-flex">
           {config.projects.map((project, index) => (
@@ -64,10 +64,26 @@ const Work = () => {
                   <div>
                     <h4>{project.title}</h4>
                     <p>{project.category}</p>
+                    {project.url && (
+                      <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          Voir le projet
+                      </a>
+                    )}
                   </div>
                 </div>
                 <h4>Tools and features</h4>
-                <p>{project.technologies}</p>
+                <p>{project.technologies} -- 
+                   {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="github-link"
+                    >
+                      Voir sur GitHub
+                    </a>
+                  )}
+                </p>
               </div>
               <WorkImage image={project.image} alt={project.title} />
             </div>

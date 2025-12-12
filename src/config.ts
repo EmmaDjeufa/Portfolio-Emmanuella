@@ -18,11 +18,11 @@ export const config = {
 
     experiences: [
         {
-            position: "Consultante",
+            position: "Consultante Modern Workplace",
             company: "Avanade",
             period: "2024 - 2024",
             location: "Bordeaux",
-            description: "Développement pendant mon stage de l'application web Allô Réseau. Optimisation à 40% de la première version avec SPFx",
+            description: "Développement pendant mon stage de l'application web Allô Réseau. Optimisation à 40% de la première version avec SPFx. Optimisation des performances de l'application et garantie de son utilisation par le client sur le long terme, conformément à sa licence Microsoft.",
             responsibilities: [
                 "Création d'interfaces utilisateur interactives avec SPFx et Node.js",
                 "Garantir un bon affichage des données utilisateurs sur l'interface developpé",
@@ -36,9 +36,9 @@ export const config = {
             company: "C.H. de l'Aigle",
             period: "2023 - 2023",
             location: "France",
-            description: "Développement d'une solution d'accès sécurisé pour les prestataires externes.",
+            description: "Développement d'une solution d'accès sécurisé aux connexions RDP/SSH et contrôle d'accès aux serveurs pour les prestataires externes.",
             responsibilities: [
-                "Sécurisation des connexions RDP/SSH et contrôle d'accès aux serveurs externes",
+                "Sécurisation des connexions RDP/SSH et contrôle d'accès aux serveurs",
                 "Formation certifiante sur les concepts essentiels de la sécurité avec la MOOC de l'ANSSI",
                 "Configuration d'appareil informatique à destination du personnel médical"
             ],
@@ -48,24 +48,28 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            category: "Full Stack",
-            technologies: "Python, TensorFlow, React, FastAPI, PostgreSQL, Docker",
-            image: "/images/project-1.webp"
+            title: "Chatbot et générateur d'images",
+            category: "DevOps",
+            technologies: "Python, Javascript, Docker, FastAPI",
+            url: "https://didactic-space-winner-7559qvv9px53rqjr-5000.app.github.dev/",
+            github:"https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
+            image: "/images/Chatbot.png"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            category: "Full Stack",
-            technologies: "TypeScript, WebRTC, Socket.io, Canvas API, Node.js, Redis",
-            image: "/images/project-2.webp"
+            title: "Déployement avec Terraform et Ansible",
+            category: "DevOps",
+            technologies: "Terraform, Ansible, Gitlab, MySQL, Python, Machines virtuelles",
+            github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
+            image: "/images/Terraform.png"
         },
         {
             id: 3,
-            title: "Blockchain Voting System",
+            title: "Site web de gestion des évènements d'étudiants",
             category: "Full Stack",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask",
-            image: "/images/project-3.webp"
+            technologies: "Angular, Node.js, Typescript, Firebase",
+            github : "https://github.com/EmmaDjeufa/Projet_Angular",
+            image: "/images/Angular.png"
         },
         {
             id: 4,
