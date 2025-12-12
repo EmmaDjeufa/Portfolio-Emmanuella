@@ -73,17 +73,19 @@ export const config = {
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            category: "Full Stack",
-            technologies: "Go, Kubernetes, Grafana, Prometheus, Terraform, React",
-            image: "/images/project-4.webp"
+            title: "Cloud Infrastructure",
+            category: "DevOps",
+            technologies: " Kubernetes, Terraform",
+            github: "https://github.com/EmmaDjeufa/Kubernetes_chatbot",
+            image: "/images/Kubernetes.png"
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
+            title: "Recommandations de films",
             category: "Full Stack",
-            technologies: "Python, TensorFlow.js, D3.js, Next.js, WebGL, TypeScript",
-            image: "/images/project-5.webp"
+            technologies: "Python, React, Node.js, FastAPI, MySQL, TypeScript",
+            github: "https://github.com/EmmaDjeufa/Moovies_Recommandation",
+            image: "/images/Movies.png"
         }
     ],
     contact: {
