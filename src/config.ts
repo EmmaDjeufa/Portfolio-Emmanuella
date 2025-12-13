@@ -36,7 +36,7 @@ export const config = {
             company: "C.H. de l'Aigle",
             period: "2023 - 2023",
             location: "France",
-            description: "Développement d'une solution d'accès sécurisé aux connexions RDP/SSH et contrôle d'accès aux serveurs pour les prestataires externes.",
+            description: "Développement pendant mon stage d'une solution d'accès sécurisé aux connexions RDP/SSH et contrôle d'accès aux serveurs pour les prestataires externes.",
             responsibilities: [
                 "Sécurisation des connexions RDP/SSH et contrôle d'accès aux serveurs",
                 "Formation certifiante sur les concepts essentiels de la sécurité avec la MOOC de l'ANSSI",
