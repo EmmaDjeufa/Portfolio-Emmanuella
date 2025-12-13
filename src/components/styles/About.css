@@ -33,9 +33,21 @@
   font-size: 1.2rem;
   line-height: 1.6;
   font-weight: 600;
-  word-spacing: normal;  /* Espacement normal entre les mots */
-  letter-spacing: normal;
-  white-space: normal;   /* Permet le retour à la ligne automatique */
+  word-spacing: normal;  
+  letter-spacing: normal;  /* ne pas hériter du h3 */
+  white-space: normal;   
+  opacity: 1;  /* s’assurer qu’aucune animation ne le masque */
+  transition: none;  /* désactiver fadeOut si présent */
+}
+
+/* Si tu veux une animation d’entrée (fadeIn) : */
+.para {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Tablettes */
