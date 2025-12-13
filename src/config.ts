@@ -12,7 +12,7 @@ export const config = {
     },
    about: {
     title: "Qui suis-je?",
-    description: "Ingénieure informatique spécialisée en Cloud Computing, avec une expertise en sécurité et développement SharePoint (SPFx). J’ai participé à des projets DevOps et cloud basés sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux."
+    description: "Ingénieure informatique spécialisée en Cloud Computing, avec une expertise en sécurité des systèmes et développement SharePoint (SPFx). J’ai mené des projets DevOps et cloud basés sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux."
    },
 
 
@@ -51,7 +51,7 @@ export const config = {
             title: "Chatbot et générateur d'images",
             category: "DevOps",
             technologies: "Python, Javascript, Docker, FastAPI",
-            url: "https://didactic-space-winner-7559qvv9px53rqjr-5000.app.github.dev/",
+            url: "https://chatbot-dalle.onrender.com",
             github:"https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
             image: "/images/Chatbot.png"
         },
