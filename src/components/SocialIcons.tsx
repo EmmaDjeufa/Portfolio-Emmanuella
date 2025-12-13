@@ -81,7 +81,7 @@ const SocialIcons = () => {
         </span>
       </div>
       <a className="resume-button" href="/Emmanuella-Ngouque-CV.pdf" target="_blank">
-        <HoverLinks text="CV" />
+        <HoverLinks text="Télécharger : CV" />
         <span>
           <TbNotes />
         </span>

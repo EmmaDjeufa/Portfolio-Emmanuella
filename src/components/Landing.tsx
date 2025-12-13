@@ -12,7 +12,7 @@ const Landing = ({ children }: PropsWithChildren) => {
       <div className="landing-section" id="landingDiv">
         <div className="landing-container">
           <div className="landing-intro">
-            <h2>Hello! Je suis</h2>
+            <h2>Hello! A votre service :</h2>
             <h1>
               {firstName.toUpperCase()}
               <br />

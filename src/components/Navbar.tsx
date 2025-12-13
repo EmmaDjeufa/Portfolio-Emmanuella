@@ -79,7 +79,7 @@ const Navbar = () => {
         <ul>
           <li>
             <a data-href="#about" href="#about">
-              <HoverLinks text="JE SUIS?" />
+              <HoverLinks text="A PROPOS" />
             </a>
           </li>
           <li>
