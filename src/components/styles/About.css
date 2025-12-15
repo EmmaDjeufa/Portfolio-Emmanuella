@@ -29,7 +29,6 @@
 
 /* Texte principal */
 .para {
-  outline: 2px solid red;
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
