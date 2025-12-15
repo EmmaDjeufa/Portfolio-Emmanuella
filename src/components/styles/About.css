@@ -101,14 +101,14 @@
   }
 
   .para {
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 100%;
     overflow-wrap: anywhere; /* 🔑 force la coupure même sur mots longs */
     word-break: break-word;
     hyphens: auto;
-    padding-inline: 6px;      /* 🔑 empêche le débordement gauche/droite */
+    padding-inline: 12px;      /* 🔑 empêche le débordement gauche/droite */
     box-sizing: border-box;   /* indispensable */
     text-align: center;
   }
