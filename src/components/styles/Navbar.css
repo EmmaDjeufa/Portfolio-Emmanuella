@@ -44,7 +44,18 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
 }
+
+.navbar-logo {
+  height: 26px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  pointer-events: none;
+}
+
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;
@@ -79,5 +90,27 @@
   }
   .navbar-title {
     font-size: 18px;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 500px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar-logo {
+    height: 34px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-logo {
+    height: 40px;
   }
 }
