@@ -108,4 +108,7 @@
     word-break: break-word;
     hyphens: auto;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
