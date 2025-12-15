@@ -29,6 +29,9 @@
 
 /* Texte principal */
 .para {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
   font-family: Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -86,3 +89,19 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .about-section {
+    padding: 40px 16px; /* plus safe pour petits écrans */
+  }
+
+  .about-me {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .para {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
