@@ -1,37 +1,36 @@
-/* Conteneur global de la section */
 .about-section {
   display: flex;
+  flex-wrap: wrap; /* permet le retour à la ligne */
   align-items: center;
-  justify-content: center; /* Centré sur mobile */
+  justify-content: center; 
   width: 100%;
   margin: auto;
   padding: 50px 20px;
 }
 
-/* Conteneur du contenu texte */
 .about-me {
   width: 100%;
   max-width: 500px;
   padding: 5px;
 }
-.split-word {
-  display: inline;
-  white-space: pre-wrap; /* respect des espaces */
+
+.split-word,
+.split-char {
+  display: inline;       /* Permet de revenir à la ligne correctement */
+  white-space: pre-wrap; /* Respecte les espaces */
 }
 
-
-/* Titre de la section */
 .about-me h3,
 .title {
   font-family: Arial, sans-serif;
   letter-spacing: 7px;
 }
 
-/* Texte principal */
 .para {
+  font-family: "Arial"; 
   font-size: 1.6rem;
   font-family: Arial, sans-serif !important;
-  line-height: 1.8;  
+  line-height: 1.8;
   opacity: 1;
   transition: none;
   animation: fadeIn 1s ease forwards;
@@ -40,7 +39,7 @@
   overflow-wrap: break-word;
   letter-spacing: normal !important;
   word-spacing: normal !important;
-  white-space: normal; /* Force la coupure des mots */
+  white-space: normal;
 }
 
 @keyframes fadeIn {
@@ -48,58 +47,29 @@
   to { opacity: 1; }
 }
 
-/* Tablettes */
 @media only screen and (min-width: 768px) {
-  .about-me {
-    max-width: 600px;
-  }
-
-  .para {
-    font-size: 1.4rem;
-  }
+  .about-me { max-width: 600px; }
+  .para { font-size: 1.4rem; }
 }
 
-/* Desktop */
 @media only screen and (min-width: 1025px) {
-  .about-section {
-    justify-content: flex-start;
-    padding: 50px 80px;
-  }
-
-  .about-me {
-    max-width: 700px;
-    padding: 0 20px;
-  }
-
-  .para {
-    font-size: 1.6rem;
-    line-height: 1.8; /* Espacement normal sur desktop */
-  }
+  .about-section { justify-content: flex-start; padding: 50px 80px; }
+  .about-me { max-width: 700px; padding: 0 20px; }
+  .para { font-size: 1.6rem; line-height: 1.8; }
 }
 
-/* Très grands écrans */
 @media only screen and (min-width: 1950px) {
   .para {
     font-size: 2.5rem;
     line-height: 2.7rem;
-    word-wrap: break-word;
-    word-break: normal;
+    word-break: break-word !important;
     letter-spacing: 0.5px;
   }
 }
 
-/* Mobile */
 @media only screen and (max-width: 480px) {
-  .about-section {
-    padding: 40px 16px;
-    overflow-x: hidden;
-  }
-
-  .about-me {
-    max-width: 100%;
-    padding: 0;
-  }
-
+  .about-section { padding: 40px 16px; overflow-x: hidden; }
+  .about-me { max-width: 100%; padding: 0; }
   .para {
     text-align: center;
     font-size: 1.1rem;
@@ -111,7 +81,5 @@
     padding-inline: 12px;
     box-sizing: border-box;
   }
-  body {
-    overflow-x: hidden;
-  }
+  body { overflow-x: hidden; }
 }

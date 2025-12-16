@@ -1,4 +1,4 @@
-// Simple text splitter utility to replace GSAP SplitText
+// src/components/utils/textSplitter.ts
 export class TextSplitter {
   chars: Element[] = [];
   words: Element[] = [];
@@ -7,20 +7,18 @@ export class TextSplitter {
   selector: string | Function;
   private originalHTML: Map<Element, string> = new Map();
 
-  constructor(target: string | Element | NodeListOf<Element> | Element[], vars?: { type?: string; linesClass?: string }) {
+  constructor(
+    target: string | Element | NodeListOf<Element> | Element[],
+    vars?: { type?: string; linesClass?: string }
+  ) {
     const type = vars?.type || "chars,words,lines";
     const linesClass = vars?.linesClass || "split-line";
 
     let elements: Element[] = [];
-    if (typeof target === "string") {
-      elements = Array.from(document.querySelectorAll(target));
-    } else if (target instanceof NodeList) {
-      elements = Array.from(target);
-    } else if (Array.isArray(target)) {
-      elements = target;
-    } else {
-      elements = [target];
-    }
+    if (typeof target === "string") elements = Array.from(document.querySelectorAll(target));
+    else if (target instanceof NodeList) elements = Array.from(target);
+    else if (Array.isArray(target)) elements = target;
+    else elements = [target];
 
     this.selector = typeof target === "string" ? target : "";
     this.elements = elements;
@@ -37,9 +35,7 @@ export class TextSplitter {
         this.splitWords(element);
       }
 
-      if (type.includes("lines")) {
-        this.splitLines(element, linesClass);
-      }
+      if (type.includes("lines")) this.splitLines(element, linesClass);
     });
   }
 
@@ -59,16 +55,17 @@ export class TextSplitter {
   }
 
   private splitWords(element: Element) {
-    const text = element.textContent || "";
-    const words = text.split(/(\s+)/);
+  const text = element.textContent || "";
+  const words = text.split(/(\s+)/);
 
-    element.innerHTML = words
-      .map((word) => {
-        if (word.trim().length === 0) return word;
-        return `<span class="split-word">${word}</span>`;
-      })
-      .join(""); // ✅ Laisser vide ou mettre " " selon besoin
-  }
+  element.innerHTML = words
+    .map((word) => {
+      if (word.trim().length === 0) return word; // espace conservé
+      return `<span class="split-word">${word}</span>`;
+    })
+    .join("");
+}
+
 
   private splitCharsFromWords(element: Element) {
     const words = element.querySelectorAll(".split-word");
@@ -83,7 +80,7 @@ export class TextSplitter {
   private splitLines(element: Element, linesClass: string) {
     requestAnimationFrame(() => {
       const items = element.querySelectorAll(".split-word, .split-char");
-      if (items.length === 0) return;
+      if (!items.length) return;
 
       let currentLine: Element[] = [];
       let lines: Element[][] = [];
@@ -94,7 +91,7 @@ export class TextSplitter {
         if (currentTop === 0) currentTop = rect.top;
 
         if (Math.abs(rect.top - currentTop) > 5) {
-          if (currentLine.length > 0) lines.push([...currentLine]);
+          if (currentLine.length) lines.push([...currentLine]);
           currentLine = [item];
           currentTop = rect.top;
         } else {
@@ -102,10 +99,10 @@ export class TextSplitter {
         }
       });
 
-      if (currentLine.length > 0) lines.push(currentLine);
+      if (currentLine.length) lines.push(currentLine);
 
       lines.forEach((line) => {
-        if (line.length === 0) return;
+        if (!line.length) return;
         const lineWrapper = document.createElement("span");
         lineWrapper.className = linesClass;
         lineWrapper.style.display = "block";
