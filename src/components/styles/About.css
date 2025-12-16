@@ -14,6 +14,11 @@
   max-width: 500px;
   padding: 5px;
 }
+.split-word {
+  display: inline;
+  white-space: pre-wrap; /* respect des espaces */
+}
+
 
 /* Titre de la section */
 .about-me h3,

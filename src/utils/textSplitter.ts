@@ -11,7 +11,6 @@ export class TextSplitter {
     const type = vars?.type || "chars,words,lines";
     const linesClass = vars?.linesClass || "split-line";
 
-    // Get elements
     let elements: Element[] = [];
     if (typeof target === "string") {
       elements = Array.from(document.querySelectorAll(target));
@@ -27,11 +26,9 @@ export class TextSplitter {
     this.elements = elements;
 
     elements.forEach((element) => {
-      // Store original HTML for revert
       this.originalHTML.set(element, element.innerHTML);
 
       if (type.includes("chars") && type.includes("words")) {
-        // Split into words first, then chars
         this.splitWords(element);
         this.splitCharsFromWords(element);
       } else if (type.includes("chars")) {
@@ -49,15 +46,11 @@ export class TextSplitter {
   private splitChars(element: Element) {
     const text = element.textContent || "";
     const chars = text.split("");
-    
+
     element.innerHTML = chars
       .map((char) => {
-        if (char === " ") {
-          return '<span class="split-char"> </span>';
-        }
-        if (char === "\n") {
-          return "<br>";
-        }
+        if (char === " ") return '<span class="split-char"> </span>';
+        if (char === "\n") return "<br>";
         return `<span class="split-char">${char}</span>`;
       })
       .join("");
@@ -71,14 +64,10 @@ export class TextSplitter {
 
     element.innerHTML = words
       .map((word) => {
-        if (word.trim().length === 0) {
-          return word; // Preserve whitespace
-        }
+        if (word.trim().length === 0) return word;
         return `<span class="split-word">${word}</span>`;
       })
-      .join("");
-
-    this.words.push(...Array.from(element.querySelectorAll(".split-word")));
+      .join(""); // ✅ Laisser vide ou mettre " " selon besoin
   }
 
   private splitCharsFromWords(element: Element) {
@@ -86,15 +75,12 @@ export class TextSplitter {
     words.forEach((word) => {
       const text = word.textContent || "";
       const chars = text.split("");
-      word.innerHTML = chars
-        .map((char) => `<span class="split-char">${char}</span>`)
-        .join("");
+      word.innerHTML = chars.map((char) => `<span class="split-char">${char}</span>`).join("");
       this.chars.push(...Array.from(word.querySelectorAll(".split-char")));
     });
   }
 
   private splitLines(element: Element, linesClass: string) {
-    // Use requestAnimationFrame to ensure layout is complete
     requestAnimationFrame(() => {
       const items = element.querySelectorAll(".split-word, .split-char");
       if (items.length === 0) return;
@@ -105,15 +91,10 @@ export class TextSplitter {
 
       items.forEach((item) => {
         const rect = item.getBoundingClientRect();
-        if (currentTop === 0) {
-          currentTop = rect.top;
-        }
+        if (currentTop === 0) currentTop = rect.top;
 
         if (Math.abs(rect.top - currentTop) > 5) {
-          // New line
-          if (currentLine.length > 0) {
-            lines.push([...currentLine]);
-          }
+          if (currentLine.length > 0) lines.push([...currentLine]);
           currentLine = [item];
           currentTop = rect.top;
         } else {
@@ -121,11 +102,8 @@ export class TextSplitter {
         }
       });
 
-      if (currentLine.length > 0) {
-        lines.push(currentLine);
-      }
+      if (currentLine.length > 0) lines.push(currentLine);
 
-      // Wrap lines
       lines.forEach((line) => {
         if (line.length === 0) return;
         const lineWrapper = document.createElement("span");
@@ -134,9 +112,7 @@ export class TextSplitter {
         const firstItem = line[0];
         firstItem.parentNode?.insertBefore(lineWrapper, firstItem);
         line.forEach((item) => {
-          if (item.parentNode === lineWrapper.parentNode) {
-            lineWrapper.appendChild(item);
-          }
+          if (item.parentNode === lineWrapper.parentNode) lineWrapper.appendChild(item);
         });
       });
 
@@ -147,9 +123,7 @@ export class TextSplitter {
   revert() {
     this.elements.forEach((element) => {
       const original = this.originalHTML.get(element);
-      if (original !== undefined) {
-        element.innerHTML = original;
-      }
+      if (original !== undefined) element.innerHTML = original;
     });
     this.chars = [];
     this.words = [];
@@ -157,4 +131,3 @@ export class TextSplitter {
     this.originalHTML.clear();
   }
 }
-
