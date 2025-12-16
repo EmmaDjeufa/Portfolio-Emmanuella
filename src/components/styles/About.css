@@ -11,41 +11,31 @@
 /* Conteneur du contenu texte */
 .about-me {
   width: 100%;
-  max-width: 700px;
-  padding: 0 10px;
+  max-width: 500px;
+  padding: 5px;
 }
 
 /* Titre de la section */
 .about-me h3,
 .title {
   font-family: Arial, sans-serif;
-  font-size: 25px;
-  text-transform: uppercase;
   letter-spacing: 7px;
-  font-weight: 400;
-  color: var(--accentColor);
-  margin-bottom: 20px;
 }
 
 /* Texte principal */
 .para {
-  overflow-wrap: break-word;
-  word-break: normal;
-  hyphens: auto;
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-weight: 600;
-  word-spacing: normal;  
-  letter-spacing: normal;  /* ne pas hériter du h3 */
-  white-space: normal;   
-  opacity: 1;  /* s’assurer qu’aucune animation ne le masque */
-  transition: none;  /* désactiver fadeOut si présent */
-}
-
-/* Si tu veux une animation d’entrée (fadeIn) : */
-.para {
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif !important;
+  line-height: 1.8;  
+  opacity: 1;
+  transition: none;
   animation: fadeIn 1s ease forwards;
+
+  word-break: break-word;      
+  overflow-wrap: break-word;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  white-space: normal; /* Force la coupure des mots */
 }
 
 @keyframes fadeIn {
@@ -67,7 +57,7 @@
 /* Desktop */
 @media only screen and (min-width: 1025px) {
   .about-section {
-    justify-content: flex-start; /* aligné à droite sur desktop */
+    justify-content: flex-start;
     padding: 50px 80px;
   }
 
@@ -78,7 +68,7 @@
 
   .para {
     font-size: 1.6rem;
-    line-height: 1.8;
+    line-height: 1.8; /* Espacement normal sur desktop */
   }
 }
 
@@ -87,15 +77,16 @@
   .para {
     font-size: 2.5rem;
     line-height: 2.7rem;
-    word-wrap: break-word; /* Empêche les mots de déborder */
-    word-break: normal; /* Evite que les mots soient trop comprimés */
-    letter-spacing: 0.5px; /* Légère séparation entre les lettres */
+    word-wrap: break-word;
+    word-break: normal;
+    letter-spacing: 0.5px;
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 480px) {
   .about-section {
-    padding: 40px 16px; /* plus safe pour petits écrans */
+    padding: 40px 16px;
     overflow-x: hidden;
   }
 
@@ -105,16 +96,15 @@
   }
 
   .para {
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 100%;
-    overflow-wrap: anywhere; /* 🔑 force la coupure même sur mots longs */
+    overflow-wrap: anywhere;
     word-break: break-word;
     hyphens: auto;
-    padding-inline: 12px;      /* 🔑 empêche le débordement gauche/droite */
-    box-sizing: border-box;   /* indispensable */
-    text-align: center;
+    padding-inline: 12px;
+    box-sizing: border-box;
   }
   body {
     overflow-x: hidden;
