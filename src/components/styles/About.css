@@ -30,7 +30,7 @@
 /* Texte principal */
 .para {
   overflow-wrap: break-word;
-  word-break: break-word;
+  word-break: normal;
   hyphens: auto;
   font-family: Arial, sans-serif;
   font-size: 1.2rem;
@@ -67,7 +67,8 @@
 /* Desktop */
 @media only screen and (min-width: 1025px) {
   .about-section {
-    justify-content: flex-end; /* aligné à droite sur desktop */
+    justify-content: flex-start; /* aligné à droite sur desktop */
+    padding: 50px 80px;
   }
 
   .about-me {
@@ -86,6 +87,9 @@
   .para {
     font-size: 2.5rem;
     line-height: 2.7rem;
+    word-wrap: break-word; /* Empêche les mots de déborder */
+    word-break: normal; /* Evite que les mots soient trop comprimés */
+    letter-spacing: 0.5px; /* Légère séparation entre les lettres */
   }
 }
 
