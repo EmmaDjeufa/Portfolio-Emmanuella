@@ -53,7 +53,7 @@
 }
 
 @media only screen and (min-width: 1025px) {
-  .about-section { justify-content: flex-start; padding: 50px 80px; }
+  .about-section { justify-content: flex-start; padding: 50px 80px; text-align: right;}
   .about-me { max-width: 700px; padding: 0 20px; }
   .para { font-size: 1.6rem; line-height: 1.8; }
 }
@@ -64,6 +64,7 @@
     line-height: 2.7rem;
     word-break: break-word !important;
     letter-spacing: 0.5px;
+    text-align: right;
   }
 }
 
