@@ -14,11 +14,11 @@
   padding: 5px;
 }
 
-.split-word,
-.split-char {
-  display: inline;       /* Permet de revenir à la ligne correctement */
-  white-space: pre-wrap; /* Respecte les espaces */
+.split-word {
+  display: inline-block;
+  margin-right: 0.3em;
 }
+
 
 .about-me h3,
 .title {
@@ -53,8 +53,8 @@
 }
 
 @media only screen and (min-width: 1025px) {
-  .about-section { justify-content: flex-start; padding: 50px 80px; text-align: left;}
-  .about-me { max-width: 700px; padding: 0 20px; }
+  .about-section { padding: 50px 80px; text-align:left;}
+  .about-me { max-width: 700px; padding: 0 20px;margin-left: clamp(10px, 8vw, 150px);margin-right: 0;}
   .para { font-size: 1.6rem; line-height: 1.8;text-align: left;}
 }
 
@@ -65,6 +65,10 @@
     word-break: break-word !important;
     letter-spacing: 0.5px;
     text-align: left;
+  }
+  .about-me {
+    margin-left: clamp(10px, 8vw, 150px);
+    margin-right: 0;
   }
 }
 
