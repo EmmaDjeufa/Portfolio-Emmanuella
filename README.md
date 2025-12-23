@@ -12,32 +12,49 @@ A personal portfolio built with modern web technologies.
 ```bash
 git clone https://github.com/EmmaDjeufa/Portfolio-Emmanuella.git
 cd Portfolio-Emmanuella
-2. Install Dependencies
-Ensure Node.js is installed:
+````
 
-bash
-Copier le code
+### 2. Install Dependencies
+
+Ensure [Node.js](https://nodejs.org/) is installed:
+
+```bash
 npm install
-3. Run Development Server
-bash
-Copier le code
+```
+
+### 3. Run Development Server
+
+```bash
 npm run dev
-Access the app at http://localhost:5173
+```
 
-4. Build for Production
-bash
-Copier le code
+Access the app at [http://localhost:5173](http://localhost:5173)
+
+### 4. Build for Production
+
+```bash
 npm run build
-Output is in the dist folder.
+```
 
-5. Preview Production Build
-bash
-Copier le code
+Output is in the `dist` folder.
+
+### 5. Preview Production Build
+
+```bash
 npm run preview
-Tech Stack
+```
+
+---
+
+## Tech Stack
+
 React, TypeScript, GSAP, ThreeJS, WebGL, HTML, CSS, JavaScript
 
-Feedback & Contributions
-Feedback: Open an issue for bugs or suggestions
+---
 
-Contributions: Fork, update, and submit a pull requestContact: Reach me via GitHub or email for questions or professional inquiries
+## Feedback & Contributions
+
+* **Feedback:** Open an [issue](https://github.com/EmmaDjeufa/Portfolio-Emmanuella/issues) for bugs or suggestions
+* **Contributions:** Fork, update, and submit a pull request
+* **Contact:** Reach me via GitHub or email for questions or professional inquiries
+
