@@ -90,7 +90,7 @@ export const config = {
     ],
     contact: {
         email: "emmandjeufa@gmail.com",
-        github: "https://github.com/EmmaDjeufa?tab=repositories",
+        github: "https://github.com/EmmaDjeufa",
         linkedin: "https://www.linkedin.com/in/emmanuella-n-36323b259",
         twitter: "https://x.com",
         instagram: "https://www.instagram.com/3884deux"
