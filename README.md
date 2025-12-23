@@ -1,58 +1,43 @@
-# My Portfolio Wesbite 🚀
+# My Portfolio Website 🚀
+
+A personal portfolio built with modern web technologies.  
+
+**Live Demo:** [Portfolio Website](https://portfolio-emmanuella-navy.vercel.app/)
+
+---
 
 ## Local Deployment
 
-To run this project locally, follow these steps:
-
-**1- Clone the Repository :**
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/EmmaDjeufa/Portfolio-Emmanuella.git
-
 cd Portfolio-Emmanuella
+2. Install Dependencies
+Ensure Node.js is installed:
 
-
-**2- Install Dependencies :**
-
-Make sure you have Node.js
- installed. Then run:
-
-- npm install
-
-
-**3- Run the Development Server :**
-
-Start the project locally with:
-
+bash
+Copier le code
+npm install
+3. Run Development Server
+bash
+Copier le code
 npm run dev
+Access the app at http://localhost:5173
 
-
-The application will be available at http://localhost:5173 (or the URL provided in your terminal).
-
-**4- Build for Production :**
-To create a production-ready build:
-
+4. Build for Production
+bash
+Copier le code
 npm run build
+Output is in the dist folder.
 
-
-The output will be in the dist folder.
-
-**5- Preview Production Build :**
-
-You can preview the production build locally with:
-
+5. Preview Production Build
+bash
+Copier le code
 npm run preview
+Tech Stack
+React, TypeScript, GSAP, ThreeJS, WebGL, HTML, CSS, JavaScript
 
-**6- Live Demo: Portfolio Website :**
+Feedback & Contributions
+Feedback: Open an issue for bugs or suggestions
 
-https://portfolio-emmanuella-navy.vercel.app/
-
-**7- Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
-
-### *8- Feedback:* 
-
-If you notice bugs, design issues, or have enhancement ideas, feel free to open an issue.
-
-*Contributions:* Pull requests are welcome! Please fork the repository, make your changes, and submit a PR with a clear description of your updates.
-
-*Contact:* You can reach me via GitHub or email for any questions or professional inquiries.
-
+Contributions: Fork, update, and submit a pull requestContact: Reach me via GitHub or email for questions or professional inquiries
