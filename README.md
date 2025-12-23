@@ -1,18 +1,17 @@
 # My Portfolio Wesbite 🚀
 
---
 ## Local Deployment
 
 To run this project locally, follow these steps:
 
-**Clone the Repository :**
+**1- Clone the Repository :**
 
 git clone https://github.com/EmmaDjeufa/Portfolio-Emmanuella.git
 
 cd Portfolio-Emmanuella
 
 
-**Install Dependencies :**
+**2- Install Dependencies :**
 
 Make sure you have Node.js
  installed. Then run:
@@ -20,7 +19,7 @@ Make sure you have Node.js
 - npm install
 
 
-**Run the Development Server :**
+**3- Run the Development Server :**
 
 Start the project locally with:
 
@@ -29,7 +28,7 @@ npm run dev
 
 The application will be available at http://localhost:5173 (or the URL provided in your terminal).
 
-**Build for Production :**
+**4- Build for Production :**
 To create a production-ready build:
 
 npm run build
@@ -37,19 +36,19 @@ npm run build
 
 The output will be in the dist folder.
 
-**Preview Production Build :**
+**5- Preview Production Build :**
 
 You can preview the production build locally with:
 
 npm run preview
 
-**Live Demo: Portfolio Website :**
+**6- Live Demo: Portfolio Website :**
 
 https://portfolio-emmanuella-navy.vercel.app/
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+**7- Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
 
-### *Feedback:* 
+### *8- Feedback:* 
 
 If you notice bugs, design issues, or have enhancement ideas, feel free to open an issue.
 
