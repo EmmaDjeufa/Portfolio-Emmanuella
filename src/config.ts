@@ -12,7 +12,7 @@ export const config = {
     },
    about: {
     title: "Qui suis-je?",
-    description: "Ingénieure informatique spécialisée en Cloud Computing, avec une expertise en sécurité des systèmes et développement SharePoint (SPFx). J’ai mené des projets DevOps et cloud basés sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux."
+    description: "Ingénieure informatique spécialisée en Cloud Computing, avec une expertise en sécurité des systèmes et développement SharePoint (SPFx). J’ai mené des projets DevOps et cloud basés sur Docker, Kubernetes, AWS, GCP, Node.js, Angular et Linux. Curieuse, rigoureuse et orientée résultats, je souhaite rejoindre une entreprise où je pourrai apporter une réelle valeur ajoutée grâce à une collaboration fiable, efficace et durable."
    },
 
 
