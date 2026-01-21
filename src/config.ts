@@ -57,19 +57,20 @@ export const config = {
         },
         {
             id: 2,
+            title: "Site web de gestion des évènements d'étudiants",
+            category: "Full Stack",
+            technologies: "Angular, Node.js, Typescript, Firebase",
+            github : "https://github.com/EmmaDjeufa/Projet_Angular",
+            url: "https://student-events-app-2.onrender.com/",
+            image: "/images/Angular.png"
+        },
+        {
+            id: 3,
             title: "Déployement avec Terraform et Ansible",
             category: "DevOps",
             technologies: "Terraform, Ansible, Gitlab, MySQL, Python, Machines virtuelles",
             github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
             image: "/images/Terraform.png"
-        },
-        {
-            id: 3,
-            title: "Site web de gestion des évènements d'étudiants",
-            category: "Full Stack",
-            technologies: "Angular, Node.js, Typescript, Firebase",
-            github : "https://github.com/EmmaDjeufa/Projet_Angular",
-            image: "/images/Angular.png"
         },
         {
             id: 4,
