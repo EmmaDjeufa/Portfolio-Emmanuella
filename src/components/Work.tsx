@@ -66,7 +66,7 @@ const Work = () => {
                     <p>{project.category}</p>
                     {project.url && (
                       <a href={project.url} target="_blank" rel="noopener noreferrer">
-                          Voir le projet
+                          Voir l'application
                       </a>
                     )}
                   </div>
