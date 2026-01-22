@@ -73,8 +73,19 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .about-section { padding: 40px 16px; overflow-x: hidden; }
-  .about-me { max-width: 100%; padding: 0; }
+  .about-section {
+    padding: 40px 16px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto; /* 👈 clé */
+  }
+
   .para {
     text-align: center;
     font-size: 1.1rem;
@@ -83,8 +94,14 @@
     overflow-wrap: anywhere;
     word-break: break-word;
     hyphens: auto;
-    padding-inline: 12px;
+
+    padding: 0; /* ❌ enlève le padding qui décale */
+    margin: 0 auto; /* 👈 recentrage parfait */
     box-sizing: border-box;
   }
-  body { overflow-x: hidden; }
+
+  body {
+    overflow-x: hidden;
+  }
 }
+
