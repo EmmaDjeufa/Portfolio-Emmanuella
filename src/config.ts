@@ -48,21 +48,21 @@ export const config = {
     projects: [
         {
             id: 1,
+            title: "Site web de gestion des évènements d'étudiants",
+            category: "Full Stack",
+            technologies: "Cloudinary, React, Vite, Node.js, Javascript, Node.js",
+            github : "https://github.com/EmmaDjeufa/student-events-app",
+            url: "https://student-events-app-2.onrender.com/",
+            image: "/images/danse.jpg"
+        },
+        {
+            id: 2,
             title: "Chatbot et générateur d'images",
             category: "DevOps",
             technologies: "Python, Javascript, Docker, FastAPI",
             url: "https://chatbot-dalle.onrender.com",
             github:"https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
             image: "/images/Chatbot.png"
-        },
-        {
-            id: 2,
-            title: "Site web de gestion des évènements d'étudiants",
-            category: "Full Stack",
-            technologies: "Angular, Node.js, Typescript, Firebase",
-            github : "https://github.com/EmmaDjeufa/Projet_Angular",
-            url: "https://student-events-app-2.onrender.com/",
-            image: "/images/Angular.png"
         },
         {
             id: 3,
