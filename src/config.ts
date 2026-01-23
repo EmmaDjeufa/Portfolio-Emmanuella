@@ -66,19 +66,19 @@ export const config = {
         },
         {
             id: 3,
-            title: "Déployement avec Terraform et Ansible",
+            title: "Serverless Web Infrastructure on AWS",
             category: "DevOps",
-            technologies: "Terraform, Ansible, Gitlab, MySQL, Python, Machines virtuelles",
-            github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
-            image: "/images/Terraform.png"
+            technologies: "AWS (Lambda, S3, IAM"), Angular,
+            github: "https://github.com/EmmaDjeufa/TP_Infrastructure_AWS",
+            image: "/images/AWS.png"
         },
         {
             id: 4,
             title: "Cloud Infrastructure",
             category: "DevOps",
-            technologies: " Kubernetes, Terraform",
-            github: "https://github.com/EmmaDjeufa/Kubernetes_chatbot",
-            image: "/images/Kubernetes.png"
+            technologies: " Ansible, VM, SQL, Terraform",Gitlab, Pipelines..
+            github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
+            image: "/images/Terraform.png"
         },
         {
             id: 5,
