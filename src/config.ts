@@ -68,7 +68,7 @@ export const config = {
             id: 3,
             title: "Serverless Web Infrastructure on AWS",
             category: "DevOps",
-            technologies: "AWS (Lambda, S3, IAM), Angular",
+            technologies: "AWS, Lambda, S3, IAM, Angular",
             github: "https://github.com/EmmaDjeufa/TP_Infrastructure_AWS",
             image: "/images/AWS.png"
         },
