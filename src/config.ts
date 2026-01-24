@@ -76,7 +76,7 @@ export const config = {
             id: 4,
             title: "Cloud Infrastructure",
             category: "DevOps",
-            technologies: " Ansible, VM, SQL, Terraform",Gitlab, Pipelines..
+            technologies: " Ansible, VM, SQL, Terraform",Gitlab, Pipelines..",
             github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
             image: "/images/Terraform.png"
         },
