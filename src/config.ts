@@ -68,7 +68,7 @@ export const config = {
             id: 3,
             title: "Serverless Web Infrastructure on AWS",
             category: "DevOps",
-            technologies: "AWS (Lambda, S3, IAM"), Angular",
+            technologies: "AWS (Lambda, S3, IAM), Angular",
             github: "https://github.com/EmmaDjeufa/TP_Infrastructure_AWS",
             image: "/images/AWS.png"
         },
@@ -76,7 +76,7 @@ export const config = {
             id: 4,
             title: "Cloud Infrastructure",
             category: "DevOps",
-            technologies: " Ansible, VM, SQL, Terraform",Gitlab, Pipelines..",
+            technologies: " Ansible, VM, SQL, Terraform,Gitlab, Pipelines..",
             github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
             image: "/images/Terraform.png"
         },
