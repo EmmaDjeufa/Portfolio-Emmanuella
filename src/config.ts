@@ -48,29 +48,32 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "Site web de gestion des évènements d'étudiants",
+            title: "Recommandations de films",
             category: "Full Stack",
-            technologies: "Cloudinary, React, Vite, Node.js, Javascript, Node.js",
-            github : "https://github.com/EmmaDjeufa/student-events-app",
-            url: "https://student-events-app-2.onrender.com/",
-            image: "/images/danse.jpg"
+            technologies: "Supabase, Angular,Jwt, Tmdb, Vercel, Render",
+            url:"https://reckomfilms.vercel.app/",
+            github: "https://github.com/EmmaDjeufa/Films_Recomandation",
+            image: "/images/Movies.png"
+            
         },
         {
             id: 2,
             title: "Chatbot et générateur d'images",
             category: "DevOps",
-            technologies: "Python, Javascript, Docker, FastAPI",
+            technologies: "Python, Javascript, Render, Docker, FastAPI",
             url: "https://chatbot-dalle.onrender.com",
             github:"https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
             image: "/images/Chatbot.png"
         },
         {
             id: 3,
-            title: "Serverless Web Infrastructure on AWS",
-            category: "DevOps",
-            technologies: "AWS, Lambda, S3, IAM, Angular",
-            github: "https://github.com/EmmaDjeufa/TP_Infrastructure_AWS",
-            image: "/images/AWS.png"
+            title: "Site web de gestion des évènements d'étudiants",
+            category: "Full Stack",
+            technologies: "Cloudinary, Supabase React, Vite, Node.js, Javascript, Node.js",
+            github : "https://github.com/EmmaDjeufa/student-events-app",
+            url: "https://student-events-app-2.onrender.com/",
+            image: "/images/danse.jpg"
+            
         },
         {
             id: 4,
@@ -82,11 +85,11 @@ export const config = {
         },
         {
             id: 5,
-            title: "Recommandations de films",
-            category: "Full Stack",
-            technologies: "Python, React, Node.js, FastAPI, MySQL, TypeScript",
-            github: "https://github.com/EmmaDjeufa/Moovies_Recommandation",
-            image: "/images/Movies.png"
+            title: "Serverless Web Infrastructure on AWS",
+            category: "DevOps",
+            technologies: "AWS, Lambda, S3, IAM, Angular",
+            github: "https://github.com/EmmaDjeufa/TP_Infrastructure_AWS",
+            image: "/images/AWS.png"
         }
     ],
     contact: {
