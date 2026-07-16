@@ -50,11 +50,10 @@ export const config = {
             id: 1,
             title: "Recommandations de films ... En cours",
             category: "Full Stack",
-            technologies: "Supabase, Angular,Jwt, Tmdb, Vercel, Render",
-            url:"https://reckomfilms.vercel.app/",
+            technologies: "Supabase, Angular, Jwt, Tmdb, Vercel, Render",
+            url: "https://reckomfilms.vercel.app/",
             github: "https://github.com/EmmaDjeufa/Films_Recomandation",
             image: "/images/Movies.png"
-            
         },
         {
             id: 2,
@@ -62,24 +61,23 @@ export const config = {
             category: "DevOps",
             technologies: "Python, Javascript, Render, Docker, FastAPI",
             url: "https://chatbot-dalle.onrender.com",
-            github:"https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
+            github: "https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
             image: "/images/Chatbot.png"
         },
         {
             id: 3,
             title: "Site web de gestion des évènements d'étudiants",
             category: "Full Stack",
-            technologies: "Cloudinary, Supabase React, Vite, Node.js, Javascript, Node.js",
-            github : "https://github.com/EmmaDjeufa/student-events-app",
+            technologies: "Cloudinary, Supabase, React, Vite, Node.js, Javascript",
+            github: "https://github.com/EmmaDjeufa/student-events-app",
             url: "https://student-events-app-2.onrender.com/",
             image: "/images/danse.jpg"
-            
         },
         {
             id: 4,
             title: "Cloud Infrastructure",
             category: "DevOps",
-            technologies: " Ansible, VM, SQL, Terraform,Gitlab, Pipelines..",
+            technologies: "Ansible, VM, SQL, Terraform, Gitlab, Pipelines",
             github: "https://github.com/EmmaDjeufa/Projet_Ansible_Terraform",
             image: "/images/Terraform.png"
         },
