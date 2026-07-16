@@ -48,7 +48,7 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "Recommandations de films",
+            title: "Recommandations de films ... En cours",
             category: "Full Stack",
             technologies: "Supabase, Angular,Jwt, Tmdb, Vercel, Render",
             url:"https://reckomfilms.vercel.app/",
