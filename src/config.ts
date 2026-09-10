@@ -53,7 +53,7 @@ export const config = {
             technologies: "Supabase, Angular, Jwt, Tmdb, Vercel, Render",
             url: "https://reckomfilms.vercel.app/",
             github: "https://github.com/EmmaDjeufa/Films_Recomandation",
-            image: "/images/Movies.png"
+            image: "/images/Reckom.jpg"
         },
         {
             id: 2,
@@ -62,7 +62,7 @@ export const config = {
             technologies: "Python, Javascript, Render, Docker, FastAPI",
             url: "https://chatbot-dalle.onrender.com",
             github: "https://github.com/EmmaDjeufa/PPT_infra/tree/travail-en-cours",
-            image: "/images/Chatbot.png"
+            image: "/images/GenAI.jpg"
         },
         {
             id: 3,
